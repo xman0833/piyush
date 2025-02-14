@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form action="/action">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Enter your Email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" placeholder="Age" id="age">
+            </div>
+            <br>
+            <div>
+                <label for="profession">Which option best describes your current role?</label>
+                <select name="profession" id="profession">
+                    <option value="student">Student</option>
+                    <option value="dev">Developer</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>How likely is it that you would recommend freeCodeCamp to a friend?</h3>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Definitely</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">Not sure</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <br>
+            <div>
+                <h3>Things that should be improved in the future (check all that apply):</h3>
+                <input type="checkbox" id="frontend" name="improvements" value="frontend">
+                <label for="frontend">Front-end projects</label>
+                <br>
+                <input type="checkbox" id="backend" name="improvements" value="backend">
+                <label for="backend">Back-end projects</label>
+                <br>
+                <input type="checkbox" id="data-visualization" name="improvements" value="data-visualization">
+                <label for="data-visualization">Data Visualization</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
